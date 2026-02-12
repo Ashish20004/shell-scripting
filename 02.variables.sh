@@ -1,4 +1,5 @@
 #!/bin/bash
+PERSON=$1
 echo "$PERSON : hi there"
 echo "What is your name?"
 read name
