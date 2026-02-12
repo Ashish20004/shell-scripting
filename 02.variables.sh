@@ -16,5 +16,6 @@ echo "Number of arguments is:$#"
 echo "Exit status of last command is:$?"
 echo "process id of the script is:$$"
 
-sum=$((age+$2))
+add=$2
+sum=$((age+add))
 echo "The sum of age and first argument is: $sum"
