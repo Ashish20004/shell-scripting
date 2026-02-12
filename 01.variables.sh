@@ -11,6 +11,14 @@ echo "This is the shell: $SHELL"
 echo "This is the username: $USER"
 echo "This is the hostname: $HOSTNAME"
 echo "This is the path: $PATH"
+DATE=$(date +%Y-%m-%d)
+TIME=$(date +%H:%M:%S)
+YEAR=$(date +%Y)
+MONTH=$(date +%m)
+DAY=$(date +%d)
+HOUR=$(date +%H)
+MINUTE=$(date +%M)
+SECOND=$(date +%S)
 echo "This is the current date: $DATE"
 echo "This is the current time: $TIME"
 echo "This is the current year: $YEAR"
