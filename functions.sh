@@ -15,8 +15,10 @@ validate(){
     fi
 }
 
-dnf install mongodb-org -y
-validate $? "Installing mongo"
+dnf install nginx -y
+validate $? "Installing nginx"
+dnf install mysql -y
+validate $? "Installing mysql"
 
 dnf install redis -y
 validate $? "Installing redis"
