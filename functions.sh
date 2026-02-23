@@ -15,7 +15,7 @@ validate(){
     fi
 }
 
-dnf install mongod -y
+dnf install mongodb-org -y
 validate $? "Installing mongo"
 
 dnf install redis -y
