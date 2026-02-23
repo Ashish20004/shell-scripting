@@ -14,13 +14,13 @@ mkdir -p $LOG_FOLDER
 
 validate(){
     if [ $1 -ne 0 ]; then
-        echo "Installing.......$2 packege is failed" | tee -a $LOG_FILE
+        echo "$2 packege is failed" | tee -a $LOG_FILE
     else
-        echo "Installing.......$2 package is success" | tee -a $LOG_FILE
+        echo "$2 package is success" | tee -a $LOG_FILE
     fi
 }   
 
-dnf install nginx -y &>> $LOG_FILE
+dnf install nginx -y &>> $LOG_FILE 
 validate $? "Installing nginx"
 
 dnf install mysql -y &>> $LOG_FILE
