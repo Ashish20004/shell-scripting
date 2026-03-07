@@ -6,7 +6,8 @@ Y="\e[33m"
 N="\e[0m"
 
 LOGS_DIR="home/ec2-user/app-logs"
-LOG_FILE="$LOGS_DIR/$(basename "$0").log"#basname removes the directry and prints only the filename
+LOG_FILE="$LOGS_DIR/$(basename "$0").log"
+#basname removes the directry and prints only the filename
 
 if [ ! -d "$LOGS_DIR" ]; then
     echo -e "$LOGS_DIR does not exits $N"
