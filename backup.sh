@@ -69,7 +69,7 @@ else
         log "Deleting file: $filepath"
         rm -f $filepath
         log "Deleted file: $filepath"
-        done <<< $FILES
+        done <<< "$FILES"
     else
         log "Archeival is ... $R FAILURE $N"
         exit 1
